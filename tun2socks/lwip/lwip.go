@@ -39,6 +39,7 @@ var (
 func Stop() {
 	log.Infof("enter stop")
 	log.Infof("begin close tun")
+	log.Infof("Stoping complate")
 	err := tunDev.Close()
 	if err != nil {
 		log.Infof("close tun(Stop func): %v", err)
